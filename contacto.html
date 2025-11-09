@@ -3,6 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Contacto - Nebula Pixel Studios</title>
+
+<style>
+/* PEGAMOS LOS MISMOS ESTILOS */
+:root{
+  --bg: #eef6ff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #6d28d9;
+  --card: #ffffff;
+  --shadow: 0 10px 28px rgba(2,6,23,.12);
+  --radius: 16px;
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #d9e1ff 0%, var(--bg) 100%);
+  line-height: 1.5;
+}
+
+nav{
+  background: #1b103b;
+  box-shadow: 0 4px 18px rgba(27,16,59,.35);
+  position: sticky; top:0; z-index: 10;
+}
+.nav-inner{
+  max-width: 960px; margin: 0 auto; padding: 12px 18px;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+.brand{ color:#fff; text-decoration:none; font-weight:700; }
+.links a{
+  color:#e2e8f0; text-decoration:none; margin-left:12px; padding:6px 10px; border-radius:10px;
+}
+.links a:hover{ background: rgba(255,255,255,.08); color:#fff; }
+
+main{ max-width:960px; margin:40px auto; padding:0 18px; }
+</style>
+
 </head>
 
 <body>
@@ -18,9 +58,9 @@
   </div>
 </nav>
 
-<main style="max-width:960px; margin:40px auto; padding:0 18px;">
+<main>
   <h1 style="color:var(--primary);">Contacto</h1>
-  <p>¿Quieres colaborar, preguntar o proponer una idea? Escríbenos.</p>
+  <p>¿Tienes una idea o propuesta? Escríbenos.</p>
 
   <h3>Correo</h3>
   <p><strong>contacto@nebulapixelstudios.com</strong></p>
