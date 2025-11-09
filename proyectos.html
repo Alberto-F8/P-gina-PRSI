@@ -27,4 +27,85 @@
     }
     main {
       max-width: 900px;
-      marg
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #ff006e;
+    }
+    img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      max-width: 560px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    hr {
+      margin: 40px 0;
+      border-color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html" class="active">Proyectos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <h1>Nuestros videojuegos</h1>
+    <p>Estos son algunos de nuestros proyectos destacados:</p>
+
+    <!-- BLOQUE BLOODBORNE -->
+    <h2>Bloodborne Remastered</h2>
+    <img src="img/juego1.jpg" alt="Bloodborne Remastered">
+    <p>El juego clásico de FromSoftware con gráficos modernos y mejorados para una experiencia más intensa.</p>
+
+    <h3>Tráiler</h3>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/fDELdR97OkU" 
+        title="Tráiler Bloodborne Remastered" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <hr>
+
+    <!-- BLOQUE NEON STREETS -->
+    <h2>Neon Streets</h2>
+    <img src="img/juego2.jpg" alt="Neon Streets">
+    <p>Juego de acción estilo cyberpunk con banda sonora original y combates intensos en un mundo futurista.</p>
+
+  </main>
+
+  <footer>
+    © 2025 PixelForge Studio
+  </footer>
+</body>
+</html>
