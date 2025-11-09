@@ -1,73 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Contacto - Nebula Pixel Studios</title>
-
-<style>
-/* PEGAMOS LOS MISMOS ESTILOS */
-:root{
-  --bg: #eef6ff;
-  --text: #0f172a;
-  --muted: #475569;
-  --primary: #6d28d9;
-  --card: #ffffff;
-  --shadow: 0 10px 28px rgba(2,6,23,.12);
-  --radius: 16px;
-}
-
-*{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
-body{
-  font-family: system-ui, sans-serif;
-  color: var(--text);
-  background: linear-gradient(180deg, #d9e1ff 0%, var(--bg) 100%);
-  line-height: 1.5;
-}
-
-nav{
-  background: #1b103b;
-  box-shadow: 0 4px 18px rgba(27,16,59,.35);
-  position: sticky; top:0; z-index: 10;
-}
-.nav-inner{
-  max-width: 960px; margin: 0 auto; padding: 12px 18px;
-  display:flex; align-items:center; justify-content:space-between; gap:12px;
-}
-.brand{ color:#fff; text-decoration:none; font-weight:700; }
-.links a{
-  color:#e2e8f0; text-decoration:none; margin-left:12px; padding:6px 10px; border-radius:10px;
-}
-.links a:hover{ background: rgba(255,255,255,.08); color:#fff; }
-
-main{ max-width:960px; margin:40px auto; padding:0 18px; }
-</style>
-
+  <meta charset="UTF-8">
+  <title>PixelForge Studio - Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body style="font-family: Arial; margin:0; background:#111; color:#eee;">
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="index.html">Nebula Pixel Studios</a>
-    <div class="links">
-      <a href="index.html">Inicio</a>
-      <a href="juegos.html">Juegos</a>
-      <a href="contacto.html">Contacto</a>
-    </div>
-  </div>
-</nav>
+  <nav style="background:#000; padding:15px;">
+    <a href="index.html" style="color:#eee; margin-right:20px;">Inicio</a>
+    <a href="proyectos.html" style="color:#eee; margin-right:20px;">Proyectos</a>
+    <a href="contacto.html" style="color:#ff006e;">Contacto</a>
+  </nav>
 
-<main>
-  <h1 style="color:var(--primary);">Contacto</h1>
-  <p>¿Tienes una idea o propuesta? Escríbenos.</p>
+  <main style="max-width:800px; margin:auto; padding:20px;">
+    <h1 style="color:#ff006e;">Contacto</h1>
+    <p>¿Quieres colaborar o dejarnos un mensaje? Llena el formulario:</p>
 
-  <h3>Correo</h3>
-  <p><strong>contacto@nebulapixelstudios.com</strong></p>
+    <!-- CAMBIA ESTA URL POR LA DE TU FORMULARIO -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYx/formResponse" 
+    width="100%" height="550" frameborder="0">
+    Cargando formulario...
+    </iframe>
 
-  <h3>Formulario</h3>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiLxzzz/formResponse?embedded=true" width="100%" height="500"></iframe>
-</main>
+    <h3>Discord del estudio:</h3>
+    <a href="https://discord.com" target="_blank" style="color:#ff006e;">Únete a nuestra comunidad</a>
+
+  </main>
+
+  <footer style="text-align:center; padding:20px; color:#999;">
+    © 2025 PixelForge Studio
+  </footer>
 
 </body>
 </html>
