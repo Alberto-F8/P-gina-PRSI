@@ -1,129 +1,39 @@
 <!DOCTYPE html>
-<html lang="es"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <title>Nebula Pixel Studios</title> 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <style>
-    :root{
-      --bg: #eef6ff;
-      --text: #0f172a;
-      --muted: #475569;
-      --primary: #6d28d9;
-      --card: #ffffff;
-      --shadow: 0 10px 28px rgba(2,6,23,.12);
-      --radius: 16px;
-    }
-
-    *{ box-sizing: border-box; }
-    html,body{ margin:0; padding:0; }
-    body{
-      font-family: system-ui, sans-serif;
-      color: var(--text);
-      background: linear-gradient(180deg, #d9e1ff 0%, var(--bg) 100%);
-      line-height: 1.5;
-    }
-
-    nav{
-      background: #1b103b;
-      box-shadow: 0 4px 18px rgba(27,16,59,.35);
-      position: sticky; top:0; z-index: 10;
-    }
-    .nav-inner{
-      max-width: 960px; margin: 0 auto; padding: 12px 18px;
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-    }
-    .brand{ color:#fff; text-decoration:none; font-weight:700; }
-    .links a{
-      color:#e2e8f0; text-decoration:none; margin-left:12px; padding:6px 10px; border-radius:10px;
-    }
-    .links a:hover{ background: rgba(255,255,255,.08); color:#fff; }
-
-    .hero{
-      max-width: 960px; margin: 36px auto 0; padding: 0 18px;
-      display:grid; grid-template-columns: 1.1fr .9fr; gap: 22px; align-items:center;
-    }
-    .hero h1{ margin:0 0 10px; font-size: clamp(26px, 3.2vw + 8px, 42px); line-height:1.15; color: var(--primary); }
-    .hero p{ margin:0 0 14px; color: var(--muted); }
-
-    .btns{ display:flex; gap:12px; flex-wrap:wrap; }
-    .btn{
-      display:inline-block; background: var(--primary); color:#fff; text-decoration:none;
-      padding:10px 14px; border-radius:12px; font-weight:600; box-shadow: 0 8px 22px rgba(109,40,217,.25);
-    }
-    .btn.outline{ background: transparent; color: var(--primary); border:2px solid var(--primary); }
-
-    .card{
-      background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding:18px;
-      display:grid; grid-template-columns: 110px 1fr; gap:16px; align-items:center;
-    }
-    .avatar{ width:110px; height:110px; border-radius:14px; object-fit:cover; border:3px solid #fff; }
-
-    main{ max-width:960px; margin: 20px auto 60px; padding: 0 18px; }
-    .panel{ background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding:20px; }
-    .panel h3{ margin:0 0 8px; }
-
-    footer{ text-align:center; color: var(--muted); padding: 28px 18px 40px; }
-
-    @media (max-width: 820px){
-      .hero{ grid-template-columns: 1fr; }
-      .card{ grid-template-columns: 1fr; text-align:center; }
-      .avatar{ margin: 0 auto; }
-      .links a{ margin-left:8px; }
-    }
-  </style>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PixelForge Studio - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body style="font-family: Arial; margin: 0; background: #111; color: #eee;">
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="index.html">Nebula Pixel Studios</a>
-    <div class="links">
-      <a href="index.html">Inicio</a>
-      <a href="juegos.html">Juegos</a>
-      <a href="contacto.html">Contacto</a>
-    </div>
-  </div>
-</nav>
+  <nav style="background:#000; padding: 15px;">
+    <a href="index.html" style="color:#ff006e; margin-right:20px;">Inicio</a>
+    <a href="proyectos.html" style="color:#eee; margin-right:20px;">Proyectos</a>
+    <a href="contacto.html" style="color:#eee;">Contacto</a>
+  </nav>
 
-<section class="hero">
-  <div>
-    <h1>Donde los sueños se convierten en mundos</h1>
-    <p>Somos un estudio independiente de desarrollo de videojuegos, creando experiencias únicas llenas de aventura, emoción y creatividad.</p>
-    <div class="btns">
-      <a class="btn" href="juegos.html">Ver Juegos</a>
-      <a class="btn outline" href="contacto.html">Contacto</a>
-    </div>
-  </div>
+  <header style="text-align:center; padding:60px;">
+    <img src="img/logo.png" alt="Logo del estudio" width="140">
+    <h1 style="color:#ff006e;">PixelForge Studio</h1>
+    <p>Creadores de videojuegos independientes con pasión por las aventuras memorables.</p>
+  </header>
 
-  <div class="card">
-    <img class="avatar" src="https://picsum.photos/200" alt="Logo del estudio" />
-    <div>
-      <h2 style="margin:0 0 6px;">Nebula Pixel Studios</h2>
-      <p style="margin:0; color:var(--muted);">Estudio indie · Desde 2025</p>
-    </div>
-  </div>
-</section>
+  <main style="max-width:800px; margin:auto; padding:20px;">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un pequeño estudio que combina arte, música y programación para crear mundos únicos.</p>
 
-<main>
-  <div class="panel">
-    <h3>Últimas novedades</h3>
+    <h3>Redes / Enlaces</h3>
     <ul>
-      <li>🎮 Nuevo juego en desarrollo: *Star Echo*</li>
-      <li>🚀 Anuncio de colaboración con artistas independientes</li>
-      <li>🌌 Próximamente: Devlog en YouTube</li>
+      <li><a href="https://store.steampowered.com" target="_blank">Nuestra referencia de inspiración: Steam</a></li>
+      <li><a href="https://www.unrealengine.com" target="_blank">Herramientas que usamos: Unreal Engine</a></li>
     </ul>
-  </div>
-</main>
+  </main>
 
-<footer>
-  © <span id="y"></span> Nebula Pixel Studios · Todos los derechos reservados
-</footer>
-
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <footer style="text-align:center; color:#999; padding:20px;">
+    © 2025 PixelForge Studio
+  </footer>
 
 </body>
 </html>
