@@ -3,109 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>PixelForge Studio - Proyectos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: #eee;
-    }
-    nav {
-      background: #000;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: #eee;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a.active, nav a:hover {
-      color: #ff006e;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #ff006e;
-    }
-    img {
-      width: 100%;
-      max-width: 340px;
-      border-radius: 10px;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      max-width: 560px;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    hr {
-      margin: 40px 0;
-      border-color: #333;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #999;
-    }
-  </style>
 </head>
+<body style="background:#111; color:#eee; font-family: Arial; margin:0; padding:20px;">
+  <h1 style="color:#ff006e;">Nuestros videojuegos</h1>
 
-<body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html" class="active">Proyectos</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+  <h2>Bloodborne Remastered</h2>
+  <img src="https://via.placeholder.com/340x200?text=Bloodborne" style="border-radius:10px;">
+  <p>El juego clásico de FromSoftware con gráficos modernos.</p>
 
-  <main>
-    <h1>Nuestros videojuegos</h1>
-    <p>Estos son algunos de nuestros proyectos destacados:</p>
+  <h3>Tráiler</h3>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width:560px;">
+    <iframe 
+      src="https://www.youtube.com/embed/fDELdR97OkU" 
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+      allowfullscreen>
+    </iframe>
+  </div>
 
-    <!-- BLOQUE BLOODBORNE -->
-    <h2>Bloodborne Remastered</h2>
-    <img src="img/juego1.jpg" alt="Bloodborne Remastered">
-    <p>El juego clásico de FromSoftware con gráficos modernos y mejorados para una experiencia más intensa.</p>
-
-    <h3>Tráiler</h3>
-    <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/fDELdR97OkU" 
-        title="Tráiler Bloodborne Remastered" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <hr>
-
-    <!-- BLOQUE NEON STREETS -->
-    <h2>Neon Streets</h2>
-    <img src="img/juego2.jpg" alt="Neon Streets">
-    <p>Juego de acción estilo cyberpunk con banda sonora original y combates intensos en un mundo futurista.</p>
-
-  </main>
-
-  <footer>
-    © 2025 PixelForge Studio
-  </footer>
+  <h2>Neon Streets</h2>
+  <img src="https://via.placeholder.com/340x200?text=Neon+Streets" style="border-radius:10px;">
+  <p>Juego de acción estilo cyberpunk con banda sonora original.</p>
 </body>
 </html>
+
